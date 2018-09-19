@@ -1,0 +1,157 @@
+/*1.1.1 - 2018-09-17*/
+
+/*CLASSES*/
+
+/*Ajusta altura dos campos*/
+.bib102-altura {
+	min-height: 7em !important;
+}
+
+/*Ajusta botões da visualização dos resultados*/
+.bib102-botoes {
+	margin: 0px 5px  5px 5px !important;
+	min-width: 40%;
+	text-align: center;
+}
+
+.bib102-botoes-icone {
+	max-width: 6em;
+	min-height: 3em;
+	text-align: center;
+	padding: 0.5em !important;
+	margin: 0.5em !important;
+}
+
+/*Botões maiores que o padrão*/
+.bib102-botoes-maiores {
+	margin: 0.7rem !important;
+	font-size: 1rem !important;
+	font-weight: bold;
+	height: 3rem !important;
+	padding: 0.5rem !important;
+}
+
+/*Deixa elemento escondido*/
+.bib102-escondido {
+    display: none !important;
+}
+
+/*Grupos de botões*/
+.bib102-grupo-botoes {
+	line-height: 2.5rem;
+	font-weight: bold;
+}
+
+/*Exibição da capa do livro na div provisória para download*/
+.bib102-imagem-exibicao {
+    display: inline-grid;
+    max-width: 100%;
+    margin-top: 0.7em;
+}
+
+/*Ajusta tamanho de exibição das miniaturas da busca*/
+.bib102-imga {
+	width: 10em;
+	margin: auto;
+}
+
+/*Altera altura da linha*/
+.bib102-linhas {
+    line-height: 1.6em;
+    font-size: 1em;
+}
+
+/*Destaque pela cor do fundo*/
+.bib102-marcatexto {
+    background-color: #ffff66 !important;
+	padding: 10px;
+}
+
+/*Destaque pela cor do fundo*/
+.bib102-marcatexto-azul {
+    background-color: #66e9ff !important;
+}
+
+/*Mensagem interna*/
+.bib102-mensagem {
+    background-color: #ffffff !important;
+    border: 0.2em solid black;
+    border-radius: 0.3em;
+    line-height: 2em;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+/*Miniatura para visualização do resultado da busca inicial de livro*/
+.bib102-miniatura {
+    display: block;
+    border: 5px solid khaki;
+    border-radius: 0.5em;
+    float: left;
+    width: 14em;
+    height: 28em;
+    box-sizing: border-box;
+    background-color: #ffff66;
+    margin: 0em 1em 1em 0em;
+    padding: 1em;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*Miniatura com fundo branco*/
+.bib102-miniatura-branca {
+    display: block;
+    border-radius: 0.5em;
+    float: left;
+    width: 16em;
+    height: 25em;
+    box-sizing: border-box;
+    border: solid 0.5em #c7a589;
+    background-color: #ffffff;
+    margin: 0em 1em 1em 0em;
+    padding: 0.2em 0.1em 1em 0em;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*Campos não editáveis*/
+.bib102-readonly {
+	background: lightgrey !important;
+	color: black !important;
+	border-color: grey !important;
+}
+
+/*ELEMENTOS HTML*/
+
+#divb {
+	text-align: center;
+}
+
+#livro_busca_campos, #livro_pub_formato, #livro_pub_idioma {
+    max-height: 88px;
+}
+
+#livros_loc_escolha {
+	text-align: center;
+}
+
+#pa {
+    margin-right: 1em;
+}
+
+/*Input da slug*/
+#post_name {
+	width: 100%;
+}
+
+/*Retira editor de conteúdo padrão do wordpress
+#postdivrich {
+	display: none;
+}*/
+
+/*botão submit*/
+#salvar1, #salvar2 {
+	margin: 0 0.5em 0.5em 0.5em;
+	border-radius: 0.2em;
+}

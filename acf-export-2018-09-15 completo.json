@@ -1,0 +1,2452 @@
+[
+    {
+        "key": "group_5b9cebfd1397d",
+        "title": "Admin Menu",
+        "fields": [
+            {
+                "key": "field_5b9cf65849ada",
+                "label": "Atualizar",
+                "name": "reorganizar_atualizar",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "reorganizar_atualizar"
+                },
+                "choices": {
+                    "a-r": "<span>Repetidor<br\/><i class=\"material-icons\" style=\"font-weight: bolder\">last_page<\/i><\/span>",
+                    "r-a": "<span>Admin Menu<br\/><i class=\"material-icons\" style=\"font-weight: bolder\">first_page<\/i><\/span>"
+                },
+                "allow_null": 1,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b9cec12cac07",
+                "label": "Reorganizar Admin Menu",
+                "name": "reorganizar_admin_menu",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "reorganizar_admin_menu"
+                },
+                "collapsed": "field_5b9ceff6cac0a",
+                "min": 0,
+                "max": 0,
+                "layout": "row",
+                "button_label": "Adicionar Menu",
+                "sub_fields": [
+                    {
+                        "key": "field_5b9ceff6cac0a",
+                        "label": "Título",
+                        "name": "reorganizar_titulo",
+                        "type": "text",
+                        "instructions": "$menu_title<br\/>(exemplo: Menu Title)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "30",
+                            "class": "",
+                            "id": "reorganizar_titulo"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b9cee41cac09",
+                        "label": "Nome",
+                        "name": "reorganizar_nome",
+                        "type": "text",
+                        "instructions": "$page_title<br\/>(exemplo: page-title)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": "reorganizar_nome"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b9cf078cac0b",
+                        "label": "Slug",
+                        "name": "reorganizar_slug",
+                        "type": "text",
+                        "instructions": "$menu_slug<br\/>(exemplo: upload.php)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": "reorganizar_slug"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b9cec48cac08",
+                        "label": "Ícone",
+                        "name": "reorganizar_icone",
+                        "type": "text",
+                        "instructions": "<a href=\"https:\/\/material.io\/tools\/icons\" target = \"_blank\">Material Icons<\/a>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "15",
+                            "class": "",
+                            "id": "reorganizar_icone"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b9cf153cac0c",
+                        "label": "Posição",
+                        "name": "reorganizar_posicao",
+                        "type": "number",
+                        "instructions": "$position<br\/>(exemplo: 99.1)",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "15",
+                            "class": "",
+                            "id": "reorganizar_posicao"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": 4
+                    },
+                    {
+                        "key": "field_5b9cf224cac0d",
+                        "label": "Submenus",
+                        "name": "reorganizar_submenus",
+                        "type": "repeater",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "100",
+                            "class": "",
+                            "id": "reorganizar_submenus"
+                        },
+                        "collapsed": "field_5b9cf30bcac0f",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "Adicionar Submenu",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b9cf30bcac0f",
+                                "label": "Título",
+                                "name": "reorganizar_submenu_titulo",
+                                "type": "text",
+                                "instructions": "$menu_title (exemplo: Menu Title)",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "40",
+                                    "class": "",
+                                    "id": "reorganizar_submenu_titulo"
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5b9cf29bcac0e",
+                                "label": "Nome",
+                                "name": "reorganizar_submenu_nome",
+                                "type": "text",
+                                "instructions": "$page_title (exemplo: page-title)",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "30",
+                                    "class": "",
+                                    "id": "reorganizar_submenu_nome"
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5b9cf315cac10",
+                                "label": "Slug",
+                                "name": "reorganizar_submenu_slug",
+                                "type": "text",
+                                "instructions": "$menu_slug (exemplo: upload.php)",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "30",
+                                    "class": "",
+                                    "id": "reorganizar_submenu_slug"
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "options-admin-menu"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "GERENCIAMENTO 3 - Editar Admin Menu"
+    },
+    {
+        "key": "group_5b20bf69759cb",
+        "title": "Autores e Livros",
+        "fields": [
+            {
+                "key": "field_5b20af8804e36",
+                "label": "Autores e Livros",
+                "name": "livro_info_autor",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "80",
+                    "class": "",
+                    "id": "livro_info_autor2"
+                },
+                "post_type": [
+                    "autor",
+                    "post"
+                ],
+                "taxonomy": [],
+                "allow_null": 0,
+                "multiple": 1,
+                "return_format": "object",
+                "ui": 1
+            },
+            {
+                "key": "field_5b17d0f1e1e99",
+                "label": "Organizador",
+                "name": "livro_info_organizador",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livro_info_organizador"
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "autor"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIGAÇÃO - Bidirecional, ligando autores a seus livros e vice-versa"
+    },
+    {
+        "key": "group_5b97ef6c2cddb",
+        "title": "Cadastramento de Categorias",
+        "fields": [
+            {
+                "key": "field_5b97ef87432c6",
+                "label": "",
+                "name": "categorias_imagem",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "categorias_imagem"
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "category"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "TAXONOMIAS 1 - Campo de imagem para categorias"
+    },
+    {
+        "key": "group_5b9b1eedeca9f",
+        "title": "Cadastramento de Prateleiras",
+        "fields": [
+            {
+                "key": "field_5b9b1eee2023f",
+                "label": "",
+                "name": "prateleiras_imagem",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "prateleiras_imagem"
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "prateleira"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "TAXONOMIAS 2 - Campo de imagem para prateleiras"
+    },
+    {
+        "key": "group_5b20e995a14a7",
+        "title": "Ficha de Autor",
+        "fields": [
+            {
+                "key": "field_5b20e9a073816",
+                "label": "Nome do Autor",
+                "name": "autor_nome",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": "autor_nome"
+                },
+                "default_value": "",
+                "placeholder": "Nome Sobrenome",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b20ea6473818",
+                "label": "Opções de formato ABNT (pessoas físicas)",
+                "name": "autor_opcoes_pessoas",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": "autor_opcoes_pessoas"
+                },
+                "choices": {
+                    "p1": "<i class=\"material-icons\">looks_one<\/i>",
+                    "p2": "<i class=\"material-icons\">looks_two<\/i><br>",
+                    "p3": "<i class=\"material-icons\">looks_3<\/i>",
+                    "p4": "<i class=\"material-icons\">looks_4<\/i>",
+                    "p5": "<i class=\"material-icons\">assignment_ind<\/i>"
+                },
+                "allow_null": 1,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b20ea2573817",
+                "label": "Nome do Autor, formato ABNT",
+                "name": "autor_abnt",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": "autor_abnt"
+                },
+                "default_value": "",
+                "placeholder": "SOBRENOME, Nome",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b20ed9a73819",
+                "label": "Opções de formato ABNT (organizações)",
+                "name": "autor_opcoes_org",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": "autor_opcoes_org"
+                },
+                "choices": {
+                    "org1": "<i class=\"material-icons\">looks_one<\/i>",
+                    "org2": "<i class=\"material-icons\">looks_two<\/i>",
+                    "org3": "<i class=\"material-icons\">looks_3<\/i>",
+                    "org4": "<i class=\"material-icons\">looks_4<\/i>",
+                    "org5": "<i class=\"material-icons\">stars<\/i>"
+                },
+                "allow_null": 1,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b2102b912ca3",
+                "label": "Código de autor",
+                "name": "autor_codigo",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": "autor_codigo"
+                },
+                "default_value": "",
+                "placeholder": "Código Cutter PHA",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b210dfaf5ce1",
+                "label": "Citação",
+                "name": "autor_citacao",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": "autor_citacao"
+                },
+                "default_value": "",
+                "placeholder": "SOBRENOME",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b21023a12ca2",
+                "label": "Buscar dados",
+                "name": "autor_gatilho",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "autor_gatilho"
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "<<<",
+                "ui_off_text": ">>>"
+            },
+            {
+                "key": "field_5b2140c90c531",
+                "label": "Editar",
+                "name": "autor_trava_destrava",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "5",
+                    "class": "",
+                    "id": "autor_trava_destrava"
+                },
+                "choices": {
+                    "a": "<i class=\"material-icons\">lock<\/i>"
+                },
+                "allow_null": 1,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b246f46707ee",
+                "label": "Notas",
+                "name": "autor_notas",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": "autor_notas"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 2,
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "autor"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "FICHA DE AUTOR - Campos para cadastramento de autor e ligação com livros"
+    },
+    {
+        "key": "group_5b9d5ac1b4176",
+        "title": "Formulário de Contato",
+        "fields": [
+            {
+                "key": "field_5b9d5b014c9b7",
+                "label": "Nome",
+                "name": "contato_nome",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "contato_nome"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b9d5b294c9b8",
+                "label": "E-mail",
+                "name": "contato_email",
+                "type": "email",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "contato_email"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_5b9d5b4f4c9b9",
+                "label": "Telefone",
+                "name": "contato_telefone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "contato_telefone"
+                },
+                "default_value": "(51)",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b9d5ba94c9ba",
+                "label": "Usuário no Wordpress",
+                "name": "contato_usuario",
+                "type": "user",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "role": "",
+                "allow_null": 1,
+                "multiple": 0,
+                "return_format": "id"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "11"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "GERENCIAMENTO 2 - Formulário de contato para cadastramento de empréstimo de livro"
+    },
+    {
+        "key": "group_5b9c1fddde5f6",
+        "title": "Listagem de Livros Cadastrados",
+        "fields": [
+            {
+                "key": "field_5b9c1feb53f41",
+                "label": "",
+                "name": "listagem_livros",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "listagem_livros"
+                },
+                "collapsed": "field_5b9c208e53f43",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5b9c202153f42",
+                        "label": "ID",
+                        "name": "listagem_id",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "15",
+                            "class": "",
+                            "id": "listagem_id"
+                        },
+                        "default_value": "",
+                        "placeholder": "Post ID",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b9c208e53f43",
+                        "label": "Localizador",
+                        "name": "listagem_localizador",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": "listagem_localizador"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b9c20d153f44",
+                        "label": "Título",
+                        "name": "listagem_titulo",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "40",
+                            "class": "",
+                            "id": "listagem_titulo"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5b9c215453f45",
+                        "label": "Autor",
+                        "name": "listagem_autor",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": "listagem_autor"
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "options-index-livros"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "GERENCIAMENTO 1 - Controle de todos os livros já cadastrados"
+    },
+    {
+        "key": "group_5b175b3611ab5",
+        "title": "Ferramentas de Pesquisa",
+        "fields": [
+            {
+                "key": "field_5b175df0310e6",
+                "label": "Base de Pesquisa",
+                "name": "livro_busca_selecionar",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livro_busca_selecionar"
+                },
+                "choices": {
+                    "am": "Amazon",
+                    "gb": "Google Books",
+                    "gd": "Google Drive",
+                    "gi": "Google Imagens",
+                    "lc": "Livraria Cultura"
+                },
+                "default_value": [],
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5b175c24a41cf",
+                "label": "Termos para Busca",
+                "name": "livro_busca_geral",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "!=",
+                            "value": ""
+                        },
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "!=",
+                            "value": "gd"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "55",
+                    "class": "",
+                    "id": "livro_busca_geral"
+                },
+                "default_value": "",
+                "placeholder": "digite aqui palavras-chave",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b175cc54ff21",
+                "label": "Iniciar Busca",
+                "name": "livro_busca_gatilho",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "!=",
+                            "value": ""
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "25",
+                    "class": "bib102-marcatexto-azul",
+                    "id": " livro_busca_gatilho"
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "<<<",
+                "ui_off_text": ">>>"
+            },
+            {
+                "key": "field_5b175fc8310e7",
+                "label": "Adicionar campos de busca",
+                "name": "livro_busca_campos",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "!=",
+                            "value": ""
+                        },
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "!=",
+                            "value": "gd"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "75",
+                    "class": "",
+                    "id": "livro_busca_campos"
+                },
+                "choices": {
+                    "isbn": "ISBN",
+                    "titulo": "Título",
+                    "autor": "Autor",
+                    "editora": "Editora",
+                    "avancada": "Busca Avançada",
+                    "lingua": "Língua"
+                },
+                "default_value": [],
+                "allow_null": 1,
+                "multiple": 1,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5b8d9fa72b2e7",
+                "label": "Limpar formulário de pesquisa",
+                "name": "livro_busca_limpar",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "!=",
+                            "value": ""
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": " livro_busca_limpar"
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "<<<",
+                "ui_off_text": ">>>"
+            },
+            {
+                "key": "field_5b17608ac67f7",
+                "label": "Index",
+                "name": "livro_busca_index",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": ""
+                        },
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "!=",
+                            "value": ""
+                        },
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "==",
+                            "value": ""
+                        },
+                        {
+                            "field": "field_5b175df0310e6",
+                            "operator": "!=",
+                            "value": ""
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livro_busca_index"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 5
+            },
+            {
+                "key": "field_5b17619923f9e",
+                "label": "ISBN",
+                "name": "livro_busca_isbn",
+                "type": "text",
+                "instructions": "ISBN_13 ou ISBN_10",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": "isbn"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": "isbn"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_busca_isbn"
+                },
+                "default_value": "",
+                "placeholder": "0000000000000",
+                "prepend": "",
+                "append": "",
+                "maxlength": 13
+            },
+            {
+                "key": "field_5b1762bc1be79",
+                "label": "Título",
+                "name": "livro_busca_titulo",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": "titulo"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_busca_titulo"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b17cb11bc2e9",
+                "label": "Autor",
+                "name": "livro_busca_autor",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": "autor"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_busca_autor"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b17cb26bc2ea",
+                "label": "Editora",
+                "name": "livro_busca_editora",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": "editora"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_busca_editora"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b17cb29bc2eb",
+                "label": "Busca Avançada",
+                "name": "livro_busca_avancada",
+                "type": "text",
+                "instructions": "Para termo exato, use aspas (ex: \"termo exato)\".\r\nPara excluir termo, use hífen (ex: -termo).",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": "avancada"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_busca_avancada"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b17cca5bc2ec",
+                "label": "Restringir Língua",
+                "name": "livro_busca_lingua",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b175fc8310e7",
+                            "operator": "==",
+                            "value": "lingua"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_busca_lingua"
+                },
+                "choices": {
+                    "sr": "Sem restrição",
+                    "pt": "Português",
+                    "es": "Espanhol",
+                    "en": "Inglês",
+                    "fr": "Francês"
+                },
+                "default_value": [
+                    "sr"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 1,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 1 - Efetuar a busca para importação de dados e imagens do livro"
+    },
+    {
+        "key": "group_5b17cde7ac517",
+        "title": "Resultados da Pesquisa",
+        "fields": [
+            {
+                "key": "field_5b17cdf993ecf",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "66",
+                    "class": "",
+                    "id": "livro_visualizar_busca"
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5b17ce0593ed0",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": "livro_visualizar_imagem"
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 2 - Campo para a visualização dos resultados da busca"
+    },
+    {
+        "key": "group_5b17cf8c0f376",
+        "title": "Informações Básicas",
+        "fields": [
+            {
+                "key": "field_5b17cfb4e1e94",
+                "label": "Título",
+                "name": "livro_info_titulo",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "70",
+                    "class": "",
+                    "id": "livro_info_titulo"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b17cff6e1e95",
+                "label": "Volume",
+                "name": "livro_info_volume",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": "livro_info_volume"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 0,
+                "max": "",
+                "step": 1
+            },
+            {
+                "key": "field_5b17d042e1e96",
+                "label": "Subtítulo",
+                "name": "livro_info_subtitulo",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": "livro_info_subtitulo"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b17f9dca3e1e",
+                "label": "ISBN_13",
+                "name": "livro_info_isbn_13",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_info_isbn_13"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 13
+            },
+            {
+                "key": "field_5b17fa2ea3e1f",
+                "label": "ISBN_10",
+                "name": "livro_info_isbn_10",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": "livro_info_isbn_10"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 10
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 3,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 3 - Informações básicas do livro"
+    },
+    {
+        "key": "group_5b17d6f9e1be2",
+        "title": "Notas e Anexos",
+        "fields": [
+            {
+                "key": "field_5b203780c7a40",
+                "label": "",
+                "name": "livro_anexos_geral",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "livro_anexos_geral"
+                },
+                "layouts": {
+                    "5b20a08ba9668": {
+                        "key": "5b20a08ba9668",
+                        "name": "descricao_do_livro",
+                        "label": "Descrição do Livro",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b20a096a9669",
+                                "label": "",
+                                "name": "livro_anexos_descricao",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": "livro_anexos_descricao"
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": 4,
+                                "new_lines": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "5b20a0efa966a": {
+                        "key": "5b20a0efa966a",
+                        "name": "notas_de_leitura",
+                        "label": "Notas de Leitura",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b20a0faa966b",
+                                "label": "",
+                                "name": "livro_anexos_notas",
+                                "type": "textarea",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": "livro_anexos_notas"
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "maxlength": "",
+                                "rows": "",
+                                "new_lines": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "5b2037915c066": {
+                        "key": "5b2037915c066",
+                        "name": "imagens",
+                        "label": "Imagens",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b209ed1b82bc",
+                                "label": "",
+                                "name": "livro_anexos_imagens",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": "livro_anexos_imagens"
+                                },
+                                "return_format": "array",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "5b209f14b82bd": {
+                        "key": "5b209f14b82bd",
+                        "name": "arquivos",
+                        "label": "Arquivos",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5b209f21b82be",
+                                "label": "",
+                                "name": "livro_anexos_arquivos",
+                                "type": "file",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": "livro_anexos_arquivos"
+                                },
+                                "return_format": "array",
+                                "library": "all",
+                                "min_size": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "Adicionar anexos",
+                "min": "",
+                "max": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 4 - Imagens, Arquivos e Notas de Leitura"
+    },
+    {
+        "key": "group_5b17da1edb0af",
+        "title": "Categorias",
+        "fields": [
+            {
+                "key": "field_5b17da2ebc4c3",
+                "label": "",
+                "name": "livro_categorias_imagem",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b17da90bc4c4",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": "livro_categorias_imagem"
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5b17da90bc4c4",
+                "label": "",
+                "name": "livro_categorias_selecao",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": "livro_categorias_selecao"
+                },
+                "taxonomy": "category",
+                "field_type": "select",
+                "allow_null": 0,
+                "add_term": 0,
+                "save_terms": 1,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            },
+            {
+                "key": "field_5b17ece728fc4",
+                "label": "Subcategoria",
+                "name": "livro_categorias_subcategoria",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b17da90bc4c4",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": "livro_categorias_subcategoria"
+                },
+                "taxonomy": "category",
+                "field_type": "select",
+                "allow_null": 1,
+                "add_term": 0,
+                "save_terms": 1,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 5,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "field",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 5 - Categorias"
+    },
+    {
+        "key": "group_5b1810326ebd0",
+        "title": "Publicação",
+        "fields": [
+            {
+                "key": "field_5b18116f17bcb",
+                "label": "Coleção",
+                "name": "livros_pub_colecao",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": "livros_pub_colecao"
+                },
+                "taxonomy": "colecao",
+                "field_type": "select",
+                "allow_null": 1,
+                "add_term": 1,
+                "save_terms": 1,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            },
+            {
+                "key": "field_5b1812a217bcc",
+                "label": "nº na coleção",
+                "name": "livros_pub_numcol",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livros_pub_numcol"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5b1810a517bc9",
+                "label": "Ano",
+                "name": "livros_pub_ano",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "bib102-altura",
+                    "id": "livros_pub_ano"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 1900,
+                "max": 2049,
+                "step": 1
+            },
+            {
+                "key": "field_5b18103f17bc7",
+                "label": "Cidade",
+                "name": "livros_pub_cidade",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": "livros_pub_cidade"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b18107717bc8",
+                "label": "Editora",
+                "name": "livros_pub_editora",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "",
+                    "id": "livros_pub_editora"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b18110117bca",
+                "label": "Edição",
+                "name": "livros_pub_edicao",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livros_pub_edicao"
+                },
+                "default_value": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": "ª",
+                "min": "",
+                "max": "",
+                "step": 1
+            },
+            {
+                "key": "field_5b21721f626f6",
+                "label": "Formato",
+                "name": "livros_pub_formato",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "bib102-altura",
+                    "id": "livros_pub_formato"
+                },
+                "choices": {
+                    "brochura": "Brochura",
+                    "capa-dura": "Capa Dura",
+                    "bolso": "Livro de Bolso",
+                    "encarte": "Encarte",
+                    "copia": "Cópia",
+                    "arquivo": "Arquivo Digital",
+                    "ebook": "E-book"
+                },
+                "default_value": [
+                    "brochura"
+                ],
+                "allow_null": 0,
+                "multiple": 1,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5b18138617bce",
+                "label": "Idioma",
+                "name": "livros_pub_idioma",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "40",
+                    "class": "bib102-altura",
+                    "id": "livros_pub_idioma"
+                },
+                "choices": {
+                    "ptg": "Português",
+                    "esp": "Espanhol",
+                    "ing": "Inglês",
+                    "fra": "Francês"
+                },
+                "default_value": [
+                    "ptg"
+                ],
+                "allow_null": 0,
+                "multiple": 1,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5b18132e17bcd",
+                "label": "nº de páginas",
+                "name": "livros_pub_numpag",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "bib102-altura",
+                    "id": "livros_pub_numpag"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_5b18162517bd0",
+                "label": "Título original",
+                "name": "livros_pub_originalt",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": "livros_pub_originalt"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b18167317bd1",
+                "label": "Ano do original",
+                "name": "livros_pub_originala",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livros_pub_originala"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": 1
+            },
+            {
+                "key": "field_5b1863951b5e3",
+                "label": "Existe duplicata",
+                "name": "livros_pub_duplicata",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livros_pub_duplicata"
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "Sim",
+                "ui_off_text": "Não"
+            },
+            {
+                "key": "field_5b1864338e930",
+                "label": "Livro duplicado",
+                "name": "livros_pub_duplicado",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b1863951b5e3",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": "livros_pub_duplicado"
+                },
+                "post_type": [
+                    "post"
+                ],
+                "taxonomy": "",
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": [
+                    "featured_image"
+                ],
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            },
+            {
+                "key": "field_5b2445e2dc3bf",
+                "label": "Notas",
+                "name": "livros_pub_notas",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": "livros_pub_notas"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 2,
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 6,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 6 - Dados da publicação"
+    },
+    {
+        "key": "group_5b1817f3db26e",
+        "title": "Localização",
+        "fields": [
+            {
+                "key": "field_5b18180183459",
+                "label": "Número de exemplares",
+                "name": "livros_loc_nexemp",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livros_loc_nexemp"
+                },
+                "default_value": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": 1,
+                "max": "",
+                "step": 1
+            },
+            {
+                "key": "field_5b2447767aeae",
+                "label": "Localizador",
+                "name": "livros_loc_localizador",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": "livros_loc_localizador"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b97e8e9ed9be",
+                "label": "Gerar localizador",
+                "name": "livros_loc_gerar",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livros_loc_gerar"
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "<<<",
+                "ui_off_text": ">>>"
+            },
+            {
+                "key": "field_5b99f024af8f9",
+                "label": "",
+                "name": "livros_loc_escolha",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "bib102-grupo-botoes",
+                    "id": "livros_loc_escolha"
+                },
+                "choices": {
+                    "codautor": "Autor<br\/><i class=\"material-icons\">how_to_reg<\/i>",
+                    "codtitulo": "Título<br\/><i class=\"material-icons\">title<\/i>"
+                },
+                "allow_null": 0,
+                "default_value": "codautor",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b18186b8345a",
+                "label": "Notação",
+                "name": "livros_loc_cutter",
+                "type": "text",
+                "instructions": "Pelo autor e, caso sem autor, pelo título.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": "livros_loc_cutter"
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5b9ab0e15e99e",
+                "label": "",
+                "name": "livros_loc_cadeado",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "bib102-grupo-botoes",
+                    "id": "livros_loc_cadeado"
+                },
+                "choices": {
+                    "a": "Editar<br\/><i class=\"material-icons\">lock<\/i>"
+                },
+                "allow_null": 1,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 7,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 7 - Localização"
+    },
+    {
+        "key": "group_5b99f6568b8c9",
+        "title": "Prateleira",
+        "fields": [
+            {
+                "key": "field_5b184b498345e",
+                "label": "",
+                "name": "livros_loc_pratmini",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b18498c8345d",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "livros_loc_pratmini"
+                },
+                "return_format": "array",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_5b18498c8345d",
+                "label": "Prateleira",
+                "name": "livros_loc_prateleira",
+                "type": "taxonomy",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "livros_loc_prateleira"
+                },
+                "taxonomy": "prateleira",
+                "field_type": "select",
+                "allow_null": 1,
+                "add_term": 0,
+                "save_terms": 1,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 8,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 8 - Prateleira"
+    },
+    {
+        "key": "group_5b17dbe3284c6",
+        "title": "Leitura e Uso",
+        "fields": [
+            {
+                "key": "field_5b184d901f678",
+                "label": "Livro retirado",
+                "name": "livro_leitura_retirado",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livro_leitura_retirado"
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "Em uso",
+                "ui_off_text": "Na estante"
+            },
+            {
+                "key": "field_5b184e4d1f679",
+                "label": "Responsável pela retirada",
+                "name": "livro_leitura_responsavel",
+                "type": "button_group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b184d901f678",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": "livro_leitura_responsavel"
+                },
+                "choices": {
+                    "ama": "Amanda",
+                    "gui": "Guilherme"
+                },
+                "allow_null": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_5b185dd91f67d",
+                "label": "Nome",
+                "name": "livro_leitura_usuario",
+                "type": "select",
+                "instructions": "Caso não esteja entre os listados, preencher o cadastro.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b184d901f678",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "30",
+                    "class": "",
+                    "id": "livro_leitura_emprestimo"
+                },
+                "choices": [],
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 1,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_5b185e631f67f",
+                "label": "Data da retirada",
+                "name": "livro_leitura_dataret",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b184d901f678",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_5b185dd91f67d",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "15",
+                    "class": "",
+                    "id": "livro_leitura_dataret"
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 0
+            },
+            {
+                "key": "field_5b185f211f682",
+                "label": "Data da devolução",
+                "name": "livro_leitura_datadev",
+                "type": "date_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b184d901f678",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_5b185dd91f67d",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "livro_leitura_datadev"
+                },
+                "display_format": "d\/m\/Y",
+                "return_format": "d\/m\/Y",
+                "first_day": 0
+            },
+            {
+                "key": "field_5b184f2a1f67a",
+                "label": "Contato",
+                "name": "livro_leitura_contato",
+                "type": "clone",
+                "instructions": "Registrar dados para contato de quem fez o empréstimo do livro.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5b184d901f678",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_5b184e4d1f679",
+                            "operator": "==",
+                            "value": "ama"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": "livro_leitura_contato"
+                },
+                "clone": "",
+                "display": "seamless",
+                "layout": "block",
+                "prefix_label": 0,
+                "prefix_name": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "current_user_role",
+                    "operator": "==",
+                    "value": "administrator"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "current_user_role",
+                    "operator": "==",
+                    "value": "contributor"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 9,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "field",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "LIVROS 9 - Leitura e uso"
+    }
+]

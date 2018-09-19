@@ -1,0 +1,35 @@
+﻿/***1.1.1***/
+2018-06-19
+
+Ajustes:
+--> Caixa de texto da metabox "Slug" ajustada para 100% de largura.
+ 
+Alterações:
+--> Adicionada a edição manual do index nas buscas com base no Google Drive ou Google Imagens.
+--> Adicionada a tag "Temáticas" para post "Livros", substituindo as Subcategorias.
+--> Adicionado o número de volume para título do post, slug do post e localizador.
+--> Alteradas as colunas de gerenciamento no painel administrativo dos livros. 
+        Acréscimo de capa, localizador e id. Exclusão de autor (do post), comentários e data. As novas colunas são ordenáveis.
+--> Alterado o valor de retorno do campo bidirecional, de objeto para id. Alteradas também as funções que utilizam este campo.
+--> Exclusão da options page "Index - Autores".
+--> Geração automática das tags de autor no post "Livros".
+--> Inclusão de botão de salvamento do post em todas as metabox de "Livros".
+--> Inclusão de botões para ajustar o tipo de divisão do livro (volume, tomo, livro, outros).
+         Se a resposta for "Outros", também foi incluso um campo para inserir manualmente o nome da divisão.
+         Alteração e acréscimo das funções em javascript que calculam o título do post, a slugdo post e o localizador do livro.
+
+Correções:
+--> Corrigido erro na busca na Amazon quando quando não há nenhum livro correspondente. 
+--> Corrigido erro na importação do ISBN de livro no Google Books quando determinada informação não existe.
+--> Corrigido erro no descarte do Google Drive.
+--> Corrigido erro no index da busca no Google Imagens ao clicar no botão "Mostrar mais imagens".
+--> Corrigido link no botão "Adicionar Autor" no cadastramento de livros. Configurado link relativo.
+
+___________________________________________________________________________________________________
+/***1.1.0***/
+2018-06-15
+
+--> Início da utilização para formulação de layout.
+--> Faltam itens relativos ao campo "Leitura e Uso" (usuários e empréstimo de livros):
+	*** form no front-end
+    *** função para alimentar campo de seleção
