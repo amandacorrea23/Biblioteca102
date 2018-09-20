@@ -1,5 +1,5 @@
 //IMAGENS.js
-//1.1.1 - 2018-09-16
+//1.1.1 - 2018-09-20
 
 /*global jQuery, document, ajaxurl*/
 
