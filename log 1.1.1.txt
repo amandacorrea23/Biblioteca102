@@ -11,6 +11,7 @@ Alterações:
 - [x] Adicionados campos para identificação de até 4 autores como "organizador".
 - [x] Alteradas as colunas de gerenciamento no painel administrativo dos livros. 
           Acréscimo de capa, localizador e id. Exclusão de autor (do post), comentários e data. As novas colunas são ordenáveis.
+- [x] Alterado o campo "Coleção" para seleção múltipla.
 - [x] Alterado o valor de retorno do campo bidirecional, de objeto para id. Alteradas também as funções que utilizam este campo.
 - [x] Exclusão da options page "Index - Autores".
 - [x] Geração automática das tags de autor no post "Livros".
